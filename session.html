@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>client server architecture</title>
+
+</head>
+
+<body>
+    <h1>Use of Session</h1>
+</body>
+<script>
+
+    if (sessionStorage.getItem("visited")) {
+        console.log("Page has been visited before.");
+        
+    } else {
+        alert("First time you entered the page.");
+        
+        sessionStorage.setItem("visited", true);
+    }
+        
+    
+</script>
+
+</html>

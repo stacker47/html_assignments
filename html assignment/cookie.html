@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cookies</title>
+</head>
+<body>
+    <h1 style="text-align: center">Welcome to new page.</h1>
+</body>
+<script>
+
+// function myFunction(){
+    let user;
+
+    if(sessionStorage.getItem(user)=="true"){
+
+        console.log("You have already entered in this site");
+        
+    }
+    else{
+        alert("you entered first time.");  
+        document.cookie = "visited=true ; expires=Sat, 17 June 2023 22:25:00 UTC; path=/";
+        user = document.cookie
+        sessionStorage.setItem(user);
+        console.log("cookie is set");
+        
+    }
+// }
+</script>
+</html>
